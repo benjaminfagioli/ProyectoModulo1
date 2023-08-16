@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Poppins&family=Roboto&family=Roboto+Condensed:wght@700&family=Rubik+Dirt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="position-fixed z-2 w-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-lg-fixed w-100 py-3">
+      <div class="container-fluid justify-content-lg-center">
+        <a class="navbar-brand fs-4 me-3" href="#">MAKEPOPMUSIC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="login.html">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal">
+                SUSCRIPCION
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">SOBRE NOSOTROS</a>
+            </li>
+            <li class="nav-item align-self-center ms-lg-3">
+              <i class="bi bi-boombox fs-4"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="mainLogin">
+    <section class="sectionModal">
+      <div class="modal modal-lg" id="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content z-3">
+            <div class="modal-header">
+              <h5 class="modal-title display-4">Suscríbete</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5 class="fw-light mb-3">Suscribiendote a nuestro blog te mantendras al tanto de todas las novedades del mundo de la música</h5>
+              <form>
+                <label for="exampleInputEmail1" class="form-label fs-3">Tu nombre</label>
+                <input type="text" class="form-control mb-3" id="exampleInputEmail1" required aria-describedby="emailHelp">
+                <label for="exampleInputPassword1" class="form-label fs-3">Tu Email</label>
+                <input type="email" required class="form-control mb-3" id="exampleInputPassword1">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-primary">Suscribirme</button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container loginContainer">
+      <div class="row">
+        <h1 class="display-3">Crea tu cuenta</h1>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" required class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirmar contraseña</label>
+              <input type="password" required class="form-control" id="exampleInputPassword1">
+              <div id="emailHelp" class="form-text text-end"><a class="text-decoration-none" href="forgotpassword.html"> ¿Olvidaste tu contraseña?</a></div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-12 text-center loginOptions">
+                <img src="img/Screenshot_3-1.png" role="button" alt="">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear cuenta</button>
+          </form>
+        </div>
+        <div class="col-md-6 imgLogin d-none d-md-block">
+          <img src="img/escuchar-musica-gratis-2613363.jpg" class="rounded-4" width="100%" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

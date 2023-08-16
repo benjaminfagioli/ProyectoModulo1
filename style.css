@@ -1,0 +1,83 @@
+:root{
+  --color1: #5465FF;
+  --color2: #788BFF;
+  --color3: #9BB1FF;
+  --color4: #BFD7FF;
+  --color5:#E2FDFF;
+}
+.navbar{
+  font-family: 'Roboto Condensed', sans-serif;
+  .nav-item{
+    font-family: 'Roboto', Courier, monospace;
+  }
+  .active{
+    color: var(--color1) !important;
+    font-weight: 600;
+  }
+}
+main{
+  padding-top: 75px;
+}
+.carousel-item{
+  height: 70vh;
+}
+.carousel img{
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.boxCape{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000081;
+}
+
+.loginContainer a{
+  color: var(--color1);
+}
+.loginContainer .btn{
+  background-color: var(--color1);
+}
+.imgLogin img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contactSection{
+  background: url(https://images.pexels.com/photos/3721941/pexels-photo-3721941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: top;
+  background-size: cover;
+  .form-label{
+    color: white;
+  }
+  .form-control,
+  .form-control-plaintext{
+    opacity: .5;
+    outline: 0px;
+  }
+  .form-control:focus,
+  .form-control-plaintext:focus{
+    opacity: 1;
+    transition: opacity .5s;
+  }
+}
+.contactSection iframe{
+  opacity: .8;
+  transition: opacity .5s;
+}
+.contactSection iframe:hover{
+  opacity: 1;
+  transition: .2s;
+}
+.contactSection h1, 
+.contactSection h2{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+@media screen and (max-width:768px) {
+  .carousel-item{
+    height: 37vh;
+  }
+}
