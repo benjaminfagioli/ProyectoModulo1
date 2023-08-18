@@ -31,7 +31,7 @@
               </button>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="contact.html">CONTACTO</a>
+              <a class="nav-link" href="contact.html">CONTACTO</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="aboutus.html">SOBRE NOSOTROS</a>
@@ -44,7 +44,7 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main class="bg-body-tertiary">
     <section class="sectionModal">
       <div class="modal modal-lg" id="modal" tabindex="-1">
         <div class="modal-dialog">
@@ -53,9 +53,9 @@
               <h1 class="modal-title display-4">Suscríbete</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body d-flex flex-column">
               <h5 class="fw-light mb-3">Suscribiendote a nuestro blog te mantendras al tanto de todas las novedades del mundo de la música</h5>
-              <form>
+              <form class="col-12 col-md-10 col-lg-8 align-self-center">
                 <label for="exampleInputEmail1" class="form-label fs-3">Tu nombre</label>
                 <input type="text" class="form-control mb-3" id="exampleInputEmail1" required aria-describedby="emailHelp">
                 <label for="exampleInputPassword1" class="form-label fs-3">Tu Email</label>
@@ -70,34 +70,11 @@
         </div>
       </div>
     </section>
-    <section class="contactSection pb-md-5">
-      <h1 class="display-4 text-center py-4 py-md-5 bg-transparent bg-opacity-50 text-white">Contáctanos</h1>
-      <div class="container px-4 px-md-0">
-        <div class="row justify-content-between">
-          <div class="col-md-6 p-1">
-            <h2 class="text-white">ENVÍANOS UN MENSAJE</h2>
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" required placeholder="Juan Pérez" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Email</label>
-                <input type="email" required class="form-control" id="exampleInputPassword1" placeholder="juanprez@gmail.com">
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="textArea">Consulta
-                </label>
-                <textarea name="textArea" required class="form-control-plaintext border rounded p-3 bg-white" id="" cols="50" rows="5" placeholder="Ingrese su consulta"></textarea>
-              </div>
-              <button type="submit" class="btn btn-light">Enviar</button>
-            </form>
-          </div>
-          <div class="col-md-5 my-4 mx-md-4">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1022205032436!2d-65.20977672441842!3d-26.83670087669258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1692073160277!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
+    <section class="container text-center">
+      <div>
+        <img src="img/404.gif" alt="">
       </div>
+      <button class="btn btn-primary"><a class=" text-decoration-none text-white" href="index.html">Volver al inicio</a></button>
     </section>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

@@ -9,11 +9,10 @@
   font-family: 'Roboto Condensed', sans-serif;
   .nav-item{
     font-family: 'Roboto', Courier, monospace;
-  }
-  
+  } 
   .nav-item a:hover,
   .nav-item button:hover{
-    color:var(--color2);
+    color:var(--color3);
   }
   .active{
     color: var(--color1) !important;
@@ -50,7 +49,9 @@ main{
   object-fit: cover;
   object-position: center;
 }
-
+.loginOptions img{
+  filter: grayscale(.4);
+}
 .contactSection{
   background: url(https://images.pexels.com/photos/3721941/pexels-photo-3721941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-position: top;
@@ -78,8 +79,16 @@ main{
   transition: .2s;
 }
 .contactSection h1, 
-.contactSection h2{
+.contactSection h2,
+.loginContainer h1,
+.sectionModal h1{
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media screen and (max-width:425px) {
+  .loginOptions a img{
+    width: 100%;
+  }
 }
 @media screen and (max-width:768px) {
   .carousel-item{

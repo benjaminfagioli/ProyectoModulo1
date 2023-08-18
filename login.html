@@ -50,12 +50,12 @@
         <div class="modal-dialog">
           <div class="modal-content z-3">
             <div class="modal-header">
-              <h5 class="modal-title display-4">Suscríbete</h5>
+              <h1 class="modal-title display-4">Suscríbete</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body d-flex flex-column">
               <h5 class="fw-light mb-3">Suscribiendote a nuestro blog te mantendras al tanto de todas las novedades del mundo de la música</h5>
-              <form>
+              <form class="col-12 col-md-10 col-lg-8 align-self-center">
                 <label for="exampleInputEmail1" class="form-label fs-3">Tu nombre</label>
                 <input type="text" class="form-control mb-3" id="exampleInputEmail1" required aria-describedby="emailHelp">
                 <label for="exampleInputPassword1" class="form-label fs-3">Tu Email</label>
@@ -71,26 +71,28 @@
       </div>
     </section>
     <section class="container loginContainer">
-      <div class="row">
-        <h1 class="display-3">Crea tu cuenta</h1>
+      <div class="row pb-md-5">
+        <h1 class="display-4 py-3 py-md-5 text-center">Crea tu cuenta</h1>
         <div class="col-md-6">
           <form>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" required class="form-control shadow" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-              <input type="password" required class="form-control" id="exampleInputPassword1">
+              <input type="password" required class="form-control shadow" id="exampleInputPassword1">
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Confirmar contraseña</label>
-              <input type="password" required class="form-control" id="exampleInputPassword1">
+              <input type="password" required class="form-control shadow" id="exampleInputPassword1">
               <div id="emailHelp" class="form-text text-end"><a class="text-decoration-none" href="forgotpassword.html"> ¿Olvidaste tu contraseña?</a></div>
             </div>
             <div class="row mb-3">
               <div class="col-12 text-center loginOptions">
-                <img src="img/Screenshot_3-1.png" role="button" alt="">
+                <a href="error.html">
+                  <img class="rounded-4" src="img/Screenshot_3-1.png" role="button" alt="">
+                </a>
               </div>
             </div>
             <button type="submit" class="btn btn-primary">Crear cuenta</button>
