@@ -10,6 +10,11 @@
   .nav-item{
     font-family: 'Roboto', Courier, monospace;
   }
+  
+  .nav-item a:hover,
+  .nav-item button:hover{
+    color:var(--color2);
+  }
   .active{
     color: var(--color1) !important;
     font-weight: 600;
