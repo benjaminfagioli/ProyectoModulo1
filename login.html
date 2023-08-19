@@ -47,15 +47,15 @@
   <main class="mainLogin">
     <section class="sectionModal">
       <div class="modal modal-lg" id="modal" tabindex="-1">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content z-3">
             <div class="modal-header">
               <h1 class="modal-title display-4">Suscríbete</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body d-flex flex-column">
+            <div class="modal-body container-fluid">
               <h5 class="fw-light mb-3">Suscribiendote a nuestro blog te mantendras al tanto de todas las novedades del mundo de la música</h5>
-              <form class="col-12 col-md-10 col-lg-8 align-self-center">
+              <form>
                 <label for="exampleInputEmail1" class="form-label fs-3">Tu nombre</label>
                 <input type="text" class="form-control mb-3" id="exampleInputEmail1" required aria-describedby="emailHelp">
                 <label for="exampleInputPassword1" class="form-label fs-3">Tu Email</label>
@@ -88,14 +88,15 @@
               <input type="password" required class="form-control shadow" id="exampleInputPassword1">
               <div id="emailHelp" class="form-text text-end"><a class="text-decoration-none" href="forgotpassword.html"> ¿Olvidaste tu contraseña?</a></div>
             </div>
-            <div class="row mb-3">
+            <button type="submit" class="btn btn-primary">Crear cuenta</button>
+            <div class="row mt-3">
               <div class="col-12 text-center loginOptions">
+                <h5>O prefieres</h5>
                 <a href="error.html">
                   <img class="rounded-4" src="img/Screenshot_3-1.png" role="button" alt="">
                 </a>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Crear cuenta</button>
           </form>
         </div>
         <div class="col-md-6 imgLogin d-none d-md-block">
