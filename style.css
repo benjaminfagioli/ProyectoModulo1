@@ -132,7 +132,19 @@ footer img{
   max-width: 150px !important;
   justify-self: center;
 }
-
+.entrada1 p:nth-child(1)::first-letter{
+  font-size: 3em;
+  line-height: 50px;
+  color: var(--color1);
+}
+.entrada1{
+  .display-5{
+    color: var(--color3);
+  }
+  .display-4{
+    color: var(--color1);
+  }
+}
 @media screen and (max-width:425px) {
   .loginOptions a img{
     width: 100%;
@@ -141,6 +153,9 @@ footer img{
 @media screen and (max-width:820px) {
   .carousel-item{
     height: 37vh;
+  }
+  iframe{
+    width: 100%;
   }
 }
 @media screen and (max-width:992px) {
