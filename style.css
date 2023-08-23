@@ -9,6 +9,7 @@
   padding: 0;
   margin: 0; 
   font-family: 'Roboto', Courier, monospace;
+  scrollbar-gutter: auto;
 }
 .navbar{
   font-family: 'Roboto Condensed', sans-serif;
@@ -88,6 +89,13 @@ main{
 .loginOptions img{
   filter: grayscale(.4);
 }
+.seccionFotos img{
+  object-fit: cover;
+  margin: 5px 0;
+}
+.seccionFotos h1{
+  font-family: 'Roboto Condensed', sans-serif;
+}
 .contactSection{
   background: url(https://images.pexels.com/photos/3721941/pexels-photo-3721941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-position: top;
@@ -144,6 +152,13 @@ footer img{
   .display-4{
     color: var(--color1);
   }
+}
+.entrada1 form{
+  max-width: 100%;
+}
+.aside2 li{
+  text-align: center;
+  letter-spacing: 4px;
 }
 @media screen and (max-width:425px) {
   .loginOptions a img{
