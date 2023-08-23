@@ -45,9 +45,6 @@ main{
   height: 100%;
   background-color: #00000081;
 }
-.card {
-  max-width: 550px;
-}
 .cardsMain img{
   margin: 10px 0;
   min-height: 35vh;
@@ -62,17 +59,20 @@ main{
   font-family: 'Roboto', sans-serif;
 }
 .card{
+  max-width: 550px;
   border: 2px outset var(--color3);
   transition: width .3s;
   box-shadow: 3px 3px 20px gray;
 }
-
 .list-unstyled a{
   text-decoration: none;
   color: var(--color1);
 }
 .list-unstyled a:hover{
   color: var(--color3);
+}
+.anuncio{
+  cursor: pointer;
 }
 .loginContainer a{
   color: var(--color1);
@@ -92,6 +92,11 @@ main{
 .seccionFotos img{
   object-fit: cover;
   margin: 5px 0;
+  transition: .2s;
+}
+.seccionFotos img:hover{
+  scale: 1.17;
+  transition: .5s;
 }
 .seccionFotos h1{
   font-family: 'Roboto Condensed', sans-serif;
@@ -128,18 +133,6 @@ main{
 .sectionModal h1{
   font-family: 'Roboto Condensed', sans-serif;
 }
-
-footer .bi{
-  color: gray;
-}
-footer .bi:hover{
-  color: white;
-  transition: .4s;
-}
-footer img{
-  max-width: 150px !important;
-  justify-self: center;
-}
 .entrada1 p:nth-child(1)::first-letter{
   font-size: 3em;
   line-height: 50px;
@@ -160,6 +153,25 @@ footer img{
   text-align: center;
   letter-spacing: 4px;
 }
+.aside a{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.aboutUs img{
+  width: 150px;
+}
+footer .bi{
+  color: gray;
+}
+footer .bi:hover{
+  color: white;
+  transition: .4s;
+}
+footer img{
+  max-width: 150px !important;
+  justify-self: center;
+}
+
+
 @media screen and (max-width:425px) {
   .loginOptions a img{
     width: 100%;
@@ -180,7 +192,7 @@ footer img{
   }
 }
 @media screen and (min-width:992px) {
-  .card:hover{
+  .cardsMain .card:hover{
     width: 50%;
     transition: all .3s;
   }
